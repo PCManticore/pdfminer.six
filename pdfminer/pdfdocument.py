@@ -1,7 +1,6 @@
 
 import re
 import struct
-import logging
 
 import six # Python 2+3 compatibility
 try:
@@ -35,9 +34,10 @@ from .pdfparser import PDFStreamParser
 from .utils import choplist
 from .utils import nunpack
 from .utils import decode_text
+from .utils import logger
 
 
-log = logging.getLogger(__name__)
+log = logger
 
 ##  Exceptions
 ##

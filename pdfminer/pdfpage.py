@@ -1,5 +1,4 @@
 
-import logging
 from .psparser import LIT
 from .pdftypes import PDFObjectNotFound
 from .pdftypes import resolve1
@@ -9,10 +8,11 @@ from .pdftypes import dict_value
 from .pdfparser import PDFParser
 from .pdfdocument import PDFDocument
 from .pdfdocument import PDFTextExtractionNotAllowed
+from .utils import logger
 
 import six  # Python 2+3 compatibility
 
-log = logging.getLogger(__name__)
+log = logger
 
 # some predefined literals and keywords.
 LITERAL_PAGE = LIT('Page')

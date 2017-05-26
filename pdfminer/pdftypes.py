@@ -1,6 +1,5 @@
 
 import zlib
-import logging
 from .lzw import lzwdecode
 from .ascii85 import ascii85decode
 from .ascii85 import asciihexdecode
@@ -12,10 +11,11 @@ from .psparser import LIT
 from . import settings
 from .utils import apply_png_predictor
 from .utils import isnumber
+from .utils import logger
 
 import six #Python 2+3 compatibility
 
-log = logging.getLogger(__name__)
+log = logger
 
 LITERAL_CRYPT = LIT('Crypt')
 

@@ -1,6 +1,5 @@
 
 # -*- coding: utf-8 -*-
-import logging
 import re
 from .pdfdevice import PDFTextDevice
 from .pdffont import PDFUnicodeNotDefined
@@ -25,7 +24,7 @@ from . import utils
 
 import six  # Python 2+3 compatibility
 
-log = logging.getLogger(__name__)
+log = utils.logger
 
 
 ##  PDFLayoutAnalyzer

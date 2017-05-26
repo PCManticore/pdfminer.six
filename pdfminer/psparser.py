@@ -3,13 +3,13 @@
 # -*- coding: utf-8 -*-
 
 import re
-import logging
 
 import six  # Python 2+3 compatibility
 
 from . import settings
+from .utils import logger
 
-log = logging.getLogger(__name__)
+log = logger
 
 
 def bytesindex(s,i,j=None):

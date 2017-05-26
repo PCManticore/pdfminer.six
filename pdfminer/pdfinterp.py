@@ -1,6 +1,5 @@
 
 import re
-import logging
 from io import BytesIO
 from .cmapdb import CMapDB
 from .cmapdb import CMap
@@ -30,10 +29,11 @@ from .pdfcolor import PREDEFINED_COLORSPACE
 from .utils import choplist
 from .utils import mult_matrix
 from .utils import MATRIX_IDENTITY
+from .utils import logger
 
 import six  # Python 2+3 compatibility
 
-log = logging.getLogger(__name__)
+log = logger
 
 ##  Exceptions
 ##

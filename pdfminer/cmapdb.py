@@ -20,7 +20,6 @@ try:
 except ImportError:
     import pickle as pickle
 import struct
-import logging
 from .psparser import PSStackParser
 from .psparser import PSSyntaxError
 from .psparser import PSEOF
@@ -30,10 +29,11 @@ from .psparser import KWD
 from .encodingdb import name2unicode
 from .utils import choplist
 from .utils import nunpack
+from .utils import logger
 
 import six  #Python 2+3 compatibility
 
-log = logging.getLogger(__name__)
+log = logger
 
 
 class CMapError(Exception):

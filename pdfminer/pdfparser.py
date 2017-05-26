@@ -1,5 +1,4 @@
 
-import logging
 from io import BytesIO
 from .psparser import PSStackParser
 from .psparser import PSSyntaxError
@@ -11,8 +10,9 @@ from .pdftypes import PDFStream
 from .pdftypes import PDFObjRef
 from .pdftypes import int_value
 from .pdftypes import dict_value
+from .utils import logger
 
-log = logging.getLogger(__name__)
+log = logger
 
 
 ##  Exceptions

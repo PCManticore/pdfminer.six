@@ -8,6 +8,11 @@ import struct
 INF = (1<<31) - 1
 
 import six  #Python 2+3 compatibility
+import logging
+
+
+logger = logging.getLogger('pdfminer')
+
 
 if six.PY3:
     import chardet  # For str encoding detection in Py3
